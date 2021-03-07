@@ -124,7 +124,7 @@ class ScoreTable extends React.Component {
     return (
       <div>
         <div >
-          <BootstrapTable keyField='team' bootstrap4=true classes="table table-dark" data={ this.state.scores } columns={ columns } cellEdit={cellEditFactory({mode: 'click', afterSaveCell: this.handleElementUpdate})} />
+          <BootstrapTable keyField='team' classes="table table-dark" data={ this.state.scores } columns={ columns } cellEdit={cellEditFactory({mode: 'click', afterSaveCell: this.handleElementUpdate})} />
         </div>
         <div>
           <form onSubmit={this.handleTeamSubmit}>

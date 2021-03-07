@@ -5,9 +5,9 @@ import cellEditFactory from 'react-bootstrap-table2-editor';
 import React from 'react';
 
 const scores = [
-  {teamName: "Soul", matches: 6, won: 3, placePoints: 12, killPoints: 13, total: 25},
-  {teamName: "TSM Entity", matches: 5, won: 3, placePoints: 57, killPoints: 28, total: 100},
-  {teamName: "Orange Rock", matches: 2, won: 3, placePoints: 59, killPoints: 23, total: 101},
+  // {teamName: "Soul", matches: 6, won: 3, placePoints: 12, killPoints: 13, total: 25},
+  // {teamName: "TSM Entity", matches: 5, won: 3, placePoints: 57, killPoints: 28, total: 100},
+  // {teamName: "Orange Rock", matches: 2, won: 3, placePoints: 59, killPoints: 23, total: 101},
 ];
 
 const columns = [{
@@ -128,10 +128,12 @@ class ScoreTable extends React.Component {
         </div>
         <div>
           <form onSubmit={this.handleTeamSubmit}>
+          <div class="form-group">
             <label>
               Team Name:
               <input type="text" name="teamName" onChange={this.handleTeamNameChange} value={this.state.team}/>
             </label>
+          </div>
             <br/>
             <label>
               Matches Played:
